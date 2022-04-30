@@ -20,9 +20,9 @@ connection.once('open', () => {
 });
 
 const usersRouter = require('./routes/users');
-const exercisesRouter = require('./routes/exercises');
+const cvsRouter = require('./routes/cvs');
 
-app.use('/exercises', exercisesRouter);
+app.use('/cvs', cvsRouter);
 app.use('/users', usersRouter);
 
 app.use(cors());
